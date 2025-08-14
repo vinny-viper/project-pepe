@@ -1,104 +1,126 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #333;
+.header {
+    background-color: #c00;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #070707 3px solid;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ff0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-    text-transform: uppercase;
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-header a {
+.navbar a {
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
-header ul {
-    padding: 0;
-    list-style: none;
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
 }
 
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-main {
-    padding: 20px 0;
-}
-
-.hero {
-    background: #fff;
+.sidebar {
+    width: 300px;
+    background-color: #1a1a1a;
     padding: 20px;
+    border: 2px solid #333;
+}
+
+.sidebar h3 {
+    color: #ff0;
+    border-bottom: 2px solid #ff0;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #444;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.hero-article {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border: 2px solid #333;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    text-align: center;
 }
 
-.hero h2 {
-    color: #070707;
-    font-size: 28px;
+.hero-article h2 {
+    color: #ff0;
+    font-size: 2rem;
 }
 
-.hero p {
-    font-size: 18px;
+.hero-article img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
 }
 
-.btn {
+.read-more {
     display: inline-block;
+    background-color: #c00;
     color: #fff;
-    background: #333;
     padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
     margin-top: 10px;
-    border-radius: 5px;
 }
 
-.content {
+.secondary-articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-article {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
+.article-card {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border: 2px solid #333;
 }
 
-article h3 {
-    color: #070707;
+.article-card img {
+    max-width: 100%;
+    height: auto;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+.article-card h3 {
+    color: #ff0;
+    font-size: 1.2rem;
+}
+
+.footer {
+    background-color: #000;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    position: relative;
+    padding: 20px;
+    border-top: 5px solid #c00;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
