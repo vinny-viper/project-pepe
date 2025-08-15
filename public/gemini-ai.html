@@ -22,6 +22,20 @@
                 <a href="software-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Software Guides</a>
                 <a href="how-to-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">How-to Guides</a>
             </div>
+            <button id="mobile-menu-toggle" class="md:hidden text-miami-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden absolute left-0 w-full bg-miami-dark bg-opacity-90 backdrop-blur-md transition-all duration-300">
+            <div class="flex flex-col space-y-4 p-4 text-center">
+                <a href="index.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Home</a>
+                <a href="#" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Gemini AI</a>
+                <a href="software-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Software Guides</a>
+                <a href="how-to-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">How-to Guides</a>
+            </div>
         </div>
     </nav>
 
@@ -68,5 +82,13 @@
         <p>&copy; 2025 Project Pepe. All rights reserved.</p>
     </footer>
 
+    <script>
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
