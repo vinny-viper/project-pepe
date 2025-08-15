@@ -1,105 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE VOICE OF REASON</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400,700&display=swap" rel="stylesheet">
+    <title>Project Pepe - Home</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <div class="header-top">
-            <div class="logo">
-                <img src="https://www.infowars.com/images/masthead-top.svg" alt="Infowars Logo">
-                <span class="logo-text">WE ARE THE RESISTANCE</span>
+<body class="bg-miami-dark text-miami-white font-sans">
+
+    <nav class="bg-miami-dark bg-opacity-70 backdrop-blur-md text-miami-white p-6 shadow-lg fixed w-full z-20 top-0 transition-colors duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-miami-yellow tracking-wider">
+                Project Pepe
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Home</a>
+                <a href="gemini-ai.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Gemini AI</a>
+                <a href="software-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Software Guides</a>
+                <a href="how-to-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">How-to Guides</a>
             </div>
-            <nav class="navbar">
-                <a href="#">BANNED.VIDEO</a>
-                <a href="#">ALEX JONES SHOW</a>
-                <a href="#">THE STORE</a>
-            </nav>
         </div>
-        <div class="header-bottom">
-            <a href="#">HOME</a>
-            <a href="#">NEWS</a>
-            <a href="#">POLITICS</a>
-            <a href="#">WORLD</a>
-            <a href="#">DEEP STATE</a>
-            <a href="#">ECONOMY</a>
-            <a href="#">HEALTH</a>
-            <a href="#">CULTURE</a>
-            <a href="#">WAR</a>
-            <a href="#">TRENDING</a>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center animate-zoom-in-out" style="background-image: url('https://source.unsplash.com/1600x900/?miami,tropical,architecture');"></div>
+        <div class="absolute inset-0 bg-miami-dark opacity-60"></div>
+        <div class="relative z-10 p-8">
+            <h1 class="text-7xl md:text-9xl font-extrabold text-miami-white drop-shadow-lg animate-fade-in-up">
+                Project Pepe
+            </h1>
+            <p class="mt-4 text-2xl md:text-3xl font-light text-miami-white drop-shadow-md animate-fade-in-up-delay-1">
+                Your portal to the future of AI, software, and tech guides.
+            </p>
+            <a href="#content" class="inline-block mt-8 px-8 py-4 bg-miami-yellow text-miami-dark font-bold text-xl rounded-full shadow-xl hover:bg-miami-blue hover:text-miami-white transition-all duration-300 transform hover:scale-105 animate-fade-in-up-delay-2">
+                Explore More
+            </a>
         </div>
     </header>
 
-    <div class="main-container">
-        <aside class="sidebar">
-            <div class="breaking-news">
-                <h3>BREAKING NEWS</h3>
-                <ul>
-                    <li><a href="#">GLOBALISTS CAUGHT IN OPERATION!</a></li>
-                    <li><a href="#">SHADOW GOVERNMENT EXPOSED</a></li>
-                    <li><a href="#">THEY'RE STEALING YOUR FREEDOM</a></li>
-                    <li><a href="#">SPECIAL REPORT: THE GREAT RESET</a></li>
-                </ul>
+    <main id="content" class="container mx-auto py-24 px-4 md:px-8">
+        <h2 class="text-5xl font-extrabold text-center text-miami-pink mb-16 animate-fade-in">What We're Building</h2>
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div class="bg-miami-white text-miami-dark p-10 rounded-xl shadow-2xl transform hover:-translate-y-2 transition-transform duration-300 group">
+                <h3 class="text-3xl font-extrabold mb-4 text-miami-blue group-hover:text-miami-pink transition-colors duration-300">Gemini AI</h3>
+                <p class="text-lg leading-relaxed">Dive into the world of multimodal AI. Our guides cover everything from basics to advanced applications with Gemini.</p>
             </div>
-            <div class="shop-promo">
-                <a href="#">
-                    <img src="https://via.placeholder.com/280x280.png?text=SUPPORT+THE+TRUTH+BUY+ALEX+JONES+NUTRITION" alt="Shop Promo">
-                </a>
+            <div class="bg-miami-white text-miami-dark p-10 rounded-xl shadow-2xl transform hover:-translate-y-2 transition-transform duration-300 group">
+                <h3 class="text-3xl font-extrabold mb-4 text-miami-blue group-hover:text-miami-pink transition-colors duration-300">Software Guides</h3>
+                <p class="text-lg leading-relaxed">From powerful IDEs to creative design software, our guides help you master the tools of the trade.</p>
             </div>
-        </aside>
+            <div class="bg-miami-white text-miami-dark p-10 rounded-xl shadow-2xl transform hover:-translate-y-2 transition-transform duration-300 group">
+                <h3 class="text-3xl font-extrabold mb-4 text-miami-blue group-hover:text-miami-pink transition-colors duration-300">How-to Guides</h3>
+                <p class="text-lg leading-relaxed">Simple, step-by-step guides for everyday tasks and projects that will make your life easier.</p>
+            </div>
+        </div>
+    </main>
 
-        <main class="main-content">
-            <article class="hero-article">
-                <a href="#">
-                    <img src="https://via.placeholder.com/800x450.png?text=EXCLUSIVE+REPORT:+THE+CABAL+IS+FALLING" alt="Hero Image">
-                </a>
-                <div class="hero-text">
-                    <h2><a href="#">The Great Awakening is HERE!</a></h2>
-                    <p>In a stunning turn of events, a shadowy cabal of elites has been exposed. Our reporters have tirelessly worked to bring you the facts they don't want you to know. Read the full exclusive report...</p>
-                    <a href="#" class="read-more">FULL STORY HERE »</a>
-                </div>
-            </article>
-
-            <section class="secondary-articles">
-                <div class="article-card">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/350x200.png?text=ARTICLE+1" alt="Article 1">
-                        <h3><a href="#">They're Tracking You with 5G!</a></h3>
-                        <p>Experts warn about the silent threat of 5G technology. Is it a coincidence that these towers are popping up everywhere? We think not.</p>
-                    </a>
-                </div>
-                <div class="article-card">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/350x200.png?text=ARTICLE+2" alt="Article 2">
-                        <h3><a href="#">Don't Believe the Fake News!</a></h3>
-                        <p>The mainstream media continues its coordinated effort to mislead the public. We break down their lies, one headline at a time.</p>
-                    </a>
-                </div>
-                <div class="article-card">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/350x200.png?text=ARTICLE+3" alt="Article 3">
-                        <h3><a href="#">The Globalists' Plan For You</a></h3>
-                        <p>An in-depth look at the true agenda behind the world's most powerful institutions and what it means for your family.</p>
-                    </a>
-                </div>
-                <div class="article-card">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/350x200.png?text=ARTICLE+4" alt="Article 4">
-                        <h3><a href="#">Freedom Fighters Rise Up!</a></h3>
-                        <p>Across the nation, patriots are standing up for their rights. Get the latest from the front lines of the culture war.</p>
-                    </a>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <footer class="footer">
-        <p>This is a free speech platform. The information is for educational purposes only. Opinions expressed are not necessarily those of the author.</p>
-        <p>&copy; 2025 The Voice of Reason. All rights reserved.</p>
+    <footer class="bg-miami-dark py-12 px-4 text-center text-miami-white text-opacity-70">
+        <p>&copy; 2025 Project Pepe. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
