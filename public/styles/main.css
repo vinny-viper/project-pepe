@@ -604,6 +604,10 @@ video {
   inset: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-2\.5 {
   right: 0.625rem;
 }
@@ -614,10 +618,6 @@ video {
 
 .top-2\.5 {
   top: 0.625rem;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .z-10 {
@@ -694,6 +694,10 @@ video {
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -710,6 +714,10 @@ video {
   display: none;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -718,16 +726,12 @@ video {
   height: 100vh;
 }
 
-.h-8 {
-  height: 2rem;
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .max-w-\[1200px\] {
@@ -1033,16 +1037,16 @@ video {
   padding: 2.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-4 {
@@ -1412,11 +1416,6 @@ video {
 .group:hover .group-hover\:text-miami-pink {
   --tw-text-opacity: 1;
   color: rgb(255 105 180 / var(--tw-text-opacity, 1));
-}
-
-.group:hover .group-hover\:text-miami-yellow {
-  --tw-text-opacity: 1;
-  color: rgb(255 215 0 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 640px) {
