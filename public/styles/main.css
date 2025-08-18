@@ -1446,10 +1446,6 @@ video {
   transition-duration: 300ms;
 }
 
-.animate-fadeInUp {
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
