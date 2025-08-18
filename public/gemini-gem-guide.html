@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
 <body class="bg-miami-dark text-miami-white font-sans">
 
@@ -18,6 +26,51 @@
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Home</a>
+                <div class="relative dropdown">
+                    <button class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300 focus:outline-none flex items-center space-x-1">
+                        <span>Gemini AI</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu absolute hidden pt-4 z-50">
+                        <div class="bg-miami-pink text-miami-white shadow-xl rounded-lg border-2 border-miami-white flex flex-col p-4 w-60 space-y-2">
+                            <a href="gemini-ai.html" class="px-2 py-1 text-base hover:text-miami-yellow transition-colors duration-300">Gemini AI Home</a>
+                            <a href="#" class="px-2 py-1 text-base hover:text-miami-yellow transition-colors duration-300">Create Your Own Gem</a>
+                            <a href="premade-gems.html" class="px-2 py-1 text-base hover:text-miami-yellow transition-colors duration-300">Pre-made Gems</a>
+                            <a href="infowarrior.html" class="px-2 py-1 text-base hover:text-miami-yellow transition-colors duration-300">Infowarrior Protocol</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <button class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300 focus:outline-none flex items-center space-x-1">
+                        <span>Software Guides</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu absolute hidden pt-4 z-50">
+                        <div class="bg-miami-blue text-miami-white shadow-xl rounded-lg border-2 border-miami-white flex flex-col p-4 w-60 space-y-2">
+                            <a href="software-guides.html" class="px-2 py-1 text-base hover:text-miami-yellow transition-colors duration-300">Software Guides Home</a>
+                            <a href="revo-uninstaller.html" class="px-2 py-1 text-base hover:text-miami-yellow transition-colors duration-300">Revo Uninstaller</a>
+                            <a href="notepad-plus-plus.html" class="px-2 py-1 text-base hover:text-miami-yellow transition-colors duration-300">Notepad++</a>
+                            <a href="7zip-guide.html" class="px-2 py-1 text-base hover:text-miami-blue transition-colors duration-300">7-Zip</a>
+                            <a href="bulk-rename-utility.html" class="px-2 py-1 text-base hover:text-miami-blue transition-colors duration-300">Bulk Rename Utility</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="how-to-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">How-to Guides</a>
+            </div>
+            <button id="mobile-menu-toggle" class="md:hidden text-miami-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden absolute left-0 w-full bg-miami-dark bg-opacity-90 backdrop-blur-md transition-all duration-300">
+            <div class="flex flex-col space-y-4 p-4 text-center">
+                <a href="index.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Home</a>
                 <a href="gemini-ai.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Gemini AI</a>
                 <a href="software-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Software Guides</a>
                 <a href="how-to-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">How-to Guides</a>
@@ -26,7 +79,7 @@
     </nav>
 
     <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center animate-zoom-in-out" style="background-image: url('https://techwiser.com/wp-content/uploads/2024/09/New-Gem-Gemini.webp');"></div>
+        <div class="absolute inset-0 bg-cover bg-center animate-zoom-in-out" style="background-image: url('https://source.unsplash.com/1600x900/?robot,ai,futuristic');"></div>
         <div class="absolute inset-0 bg-miami-blue opacity-60"></div>
         <div class="relative z-10 p-8">
             <h1 class="text-7xl md:text-9xl font-extrabold text-miami-white drop-shadow-lg animate-fade-in-up">
@@ -50,8 +103,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-16">
             <div class="bg-miami-white p-10 rounded-xl shadow-2xl transform hover:-translate-y-2 transition-transform duration-300 group md:col-span-1">
                 <h3 class="text-3xl font-extrabold mb-4 text-miami-blue group-hover:text-miami-pink transition-colors duration-300">Step 1: Getting Started</h3>
-                <p class="text-lg leading-relaxed text-gray-700">On the main dashboard, look for the sidebar on the left. Find a button or link labeled   "Explore Gems." Click that to begin creating your Gem! This is where you'll start the process of defining your AI.</p>
-                <img src="https://techwiser.com/wp-content/uploads/2024/09/New-Gem-Gemini.webp" alt="Gemini AI Interface" class="w-full h-auto mt-6 rounded-lg shadow-md border-2 border-solid border-gray-300">
+                <p class="text-lg leading-relaxed text-gray-700">Go to the Gemini interface, log in, and look for the "Create a Gem" or "Create Your Own" button. This is where you'll start the process of defining your AI.</p>
+                <img src="https://source.unsplash.com/800x600/?gemini-ai-interface" alt="Gemini AI Interface" class="w-full h-auto mt-6 rounded-lg shadow-md border-2 border-solid border-gray-300">
             </div>
             
             <div class="bg-miami-white p-10 rounded-xl shadow-2xl transform hover:-translate-y-2 transition-transform duration-300 group md:col-span-1">
@@ -83,7 +136,7 @@ Core Directive: [The AI's primary purpose]</pre>
             
         </div>
     </main>
-    
+
     <footer class="bg-miami-dark py-12 px-4 text-center text-miami-white text-opacity-70">
         <p>&copy; 2025 Project Pepe. All rights reserved.</p>
     </footer>
@@ -101,7 +154,13 @@ Core Directive: [The AI's primary purpose]</pre>
                     console.error('Failed to copy text: ', err);
                 });
         }
-    </script>
 
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

@@ -3,9 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.drop-shadow-lg {
-  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.4));
+@layer utilities {
+    .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
 }
-.drop-shadow-md {
-  filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.4));
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
