@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Pepe - 7-Zip Guide</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-miami-dark text-miami-white font-sans">
+
+    <nav class="bg-miami-dark bg-opacity-70 backdrop-blur-md text-miami-white p-6 shadow-lg fixed w-full z-20 top-0 transition-colors duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-extrabold text-miami-yellow tracking-wider">
+                Project Pepe
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Home</a>
+                <a href="gemini-ai.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Gemini AI</a>
+                <a href="software-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Software Guides</a>
+                <a href="how-to-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">How-to Guides</a>
+            </div>
+            <button id="mobile-menu-toggle" class="md:hidden text-miami-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden absolute left-0 w-full bg-miami-dark bg-opacity-90 backdrop-blur-md transition-all duration-300">
+            <div class="flex flex-col space-y-4 p-4 text-center">
+                <a href="index.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Home</a>
+                <a href="gemini-ai.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Gemini AI</a>
+                <a href="software-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">Software Guides</a>
+                <a href="how-to-guides.html" class="text-lg font-semibold hover:text-miami-blue transition-colors duration-300">How-to Guides</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center animate-zoom-in-out" style="background-image: url('https://source.unsplash.com/1600x900/?file-compression,archive');"></div>
+        <div class="absolute inset-0 bg-miami-blue opacity-60"></div>
+        <div class="relative z-10 p-8">
+            <h1 class="text-7xl md:text-9xl font-extrabold text-miami-white drop-shadow-lg animate-fade-in-up">
+                7-Zip
+            </h1>
+            <p class="mt-4 text-2xl md:text-3xl font-light text-miami-white drop-shadow-md animate-fade-in-up-delay-1">
+                A complete guide to a powerful file compression tool.
+            </p>
+        </div>
+    </header>
+    
+    <main class="container mx-auto py-24 px-4 md:px-8">
+        <h2 class="text-5xl font-extrabold text-center text-miami-pink mb-16 animate-fade-in">A Guide to File Archiving</h2>
+        
+        <div class="prose prose-lg lg:prose-xl mx-auto text-miami-white">
+            <div class="bg-miami-white text-miami-dark p-10 rounded-xl shadow-2xl mb-12">
+                <h3 class="text-3xl font-extrabold mb-4 text-miami-blue">Why Choose 7-Zip?</h3>
+                <ul class="text-lg leading-relaxed list-disc list-inside space-y-2 text-gray-700">
+                    <li>**High Compression Ratio:** 7-Zip's 7z format offers a better compression ratio than standard ZIP formats.</li>
+                    <li>**File Encryption:** You can protect your archives with strong AES-256 encryption.</li>
+                    <li>**Free and Open-Source:** It's completely free to use, even for commercial purposes.</li>
+                </ul>
+            </div>
+            
+            <a href="https://www.7-zip.org/" target="_blank" class="inline-block px-8 py-4 bg-miami-pink text-miami-white font-bold rounded-full shadow-lg hover:bg-miami-blue transition-colors duration-300">Download 7-Zip Here</a>
+
+            <h2 class="text-5xl font-extrabold text-center text-miami-blue mt-16 mb-16 animate-fade-in">A Step-by-Step Guide</h2>
+
+            <div class="mt-12 space-y-12">
+                <div class="bg-miami-white text-miami-dark p-10 rounded-xl shadow-2xl">
+                    <h3 class="text-3xl font-extrabold mb-4 text-miami-blue">Step 1: Installation</h3>
+                    <p class="text-lg leading-relaxed">Download the appropriate version of 7-Zip from the official website. The installer is simple and you can accept all the default settings. It will integrate with your right-click context menu automatically.</p>
+                </div>
+                
+                <div class="bg-miami-white text-miami-dark p-10 rounded-xl shadow-2xl">
+                    <h3 class="text-3xl font-extrabold mb-4 text-miami-blue">Step 2: Create an Archive</h3>
+                    <p class="text-lg leading-relaxed">To create an archive, right-click on the file or folder you want to compress. In the context menu, hover over the "7-Zip" option, and then select "Add to archive..." You can choose the compression format, level, and add a password for encryption.</p>
+                </div>
+                
+                <div class="bg-miami-white text-miami-dark p-10 rounded-xl shadow-2xl">
+                    <h3 class="text-3xl font-extrabold mb-4 text-miami-blue">Step 3: Extract an Archive</h3>
+                    <p class="text-lg leading-relaxed">To extract files, simply right-click on the compressed file. Hover over the "7-Zip" option and choose from the available options: "Extract Here" will extract the files to the current folder, while "Extract to [Folder Name]" will create a new folder and extract the files there.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-miami-dark py-12 px-4 text-center text-miami-white text-opacity-70">
+        <p>&copy; 2025 Project Pepe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
